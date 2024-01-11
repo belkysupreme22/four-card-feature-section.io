@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+.header{
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    gap: 1rem;
+}
+.title{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.35rem;
+}
+.upper-txt{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 200;
+    color:  hsl(229, 6%, 66%);
+}
+.strong-txt{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+.header-txt{
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+}
+.card-container{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1025px;
+    margin:2rem auto;
+}
+.supervisor-card, .team-card, .karma-card, .calculator-card{
+   background-color: white;
+    max-width: 325px;
+    height: 100%;
+    border-radius: 8px;
+    line-height: 1.5;
+   
+    padding-top: 15px;
+    padding-bottom: 25px;
+    box-shadow:0 6px 18px -5px hsl(229, 6%, 66%);
+}
+.team-card{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.karma-card{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+.supervisor-card{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.calculator-card{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+.middle-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.card-header{
+    padding-left: 23px;
+    font-size: 1.3rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.card-txt{
+    font-weight: 400;
+    color:hsl(229, 6%, 66%);
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+.card-icon{
+    display: inline-block;
+    margin-left: 235px;
+    margin-top: 2rem;
+}
+@media screen and (max-width:675px) {
+
+    .card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 6rem;
+    gap: 1.5rem;
+}
+.supervisor-card, .team-card, .karma-card, .calculator-card{
+    
+     max-width: 340px;
+ }
+.header{
+    max-width: 300px;
+   
+}
+}
+
